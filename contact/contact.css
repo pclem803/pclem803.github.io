@@ -1,0 +1,21 @@
+.contact_info {
+    width: 1000px;
+    max-width: 90%;
+    margin-top: 50px;
+}
+
+.contact_info h1 {
+    font-family: var(--text-font);
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+
+@media (max-width: 480px) {
+    .contact_info h1 {
+        font-size: 15px;
+    }
+}
+
+.contact_info a {
+    font-weight: 400;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+
+        <title>Atul Jalan</title> 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel='stylesheet' href='../global.css'>
+        <link rel='stylesheet' href='../experience.css'>
+        <script type='text/javascript' src='../main.js'></script>
+
+    </head>
+
+    <body onresize="resize()" onload='mounted()'>
+
+        <div class='nav_bar'>
+
+            <div class='nav_bar_element nav_bar_left'>
+                <h2><a href='../index.html'>Atul Jalan</a></h2>
+            </div>
+
+            <a id='hamburger_icon' href="javascript:void(0);" onclick="show_nav_bar()">
+                <img src='../assets/hamburger_icon.svg'></img>
+            </a>
+
+            <div id='page_links_mobile' class='page_links_mobile'>
+                <h4><a href='#' onclick="show_nav_bar()">WORK</a></h4>
+                <h4><a href='../projects/projects.html'>PROJECTS</a></h4>
+                <h4><a href='../contact/contact.html'>CONTACT</a></h4>
+                <h4><a href='../assets/resume.pdf' target='_blank' onclick="show_nav_bar()">RESUME</a></h4>
+            </div>
+
+            <div class='nav_bar_element nav_bar_center'>
+                <div class='page_links'>
+                    <a class='underline_animation' href='#'><h4>WORK</h4></a>
+                    <a class='underline_animation' href='../projects/projects.html'><h4>PROJECTS</h4></a>
+                    <a class='underline_animation' href='../contact/contact.html'><h4>CONTACT</h4></a>
+                    <a class='underline_animation' href='../assets/resume.pdf' target='_blank' ><h4>RESUME</h4></a>
+                </div>
+            </div>
+
+            <div class='nav_bar_element nav_bar_right'>
+                <a href='https://github.com/atul-jalan' target='_blank' ><img src='../assets/github_icon.svg'></img></a>
+                <a href='https://linkedin.com/in/atul-jalan' target='_blank' ><img src='../assets/linkedin_icon.svg'></img></a>
+                <a href='mailto:atuljalan17@gmail.com'><img src='../assets/email_icon.svg'></img></a>
+            </div>
+
+        </div>
+
+        <div class='page_content'>
+
+            <div class='page_title'>
+                <h1>Work</h1>
+            </div>
+
+            <div class='single_experience'>
+
+                <div class='single_experience_header'>
+                    <img src='../assets/northwestern_icon.png'></img>
+                    <div class='single_experience_header_text'>
+                        <h3 class='experience_name'><span class='accent' id='ideal_lab_name'>Integrated Design Automation Laboratory</span> &#183; Software Engineer Intern</h3>
+                        <h3 class='experience_dates'>Jun 2020 - Aug 2020</h3>
+                    </div>
+                </div>
+
+                <img src='../assets/nanomine.png' class='experience_image'></img>
+                
+                <h2 class='single_experience_subtitle'>SUMMARY</h2>
+                <p>I'm currently working here! Stay tuned for updates.</p>
+                
+            </div>
+
+            <div class='single_experience'>
+
+                <div class='single_experience_header'>
+                    <img src='../assets/wal_logistics_icon.png'></img>
+                    <div class='single_experience_header_text'>
+                        <h3 class='experience_name'><span class='accent'>Wal Logistics</span> &#183; Software Engineer (Contract)</h3>
+                        <h3 class='experience_dates'>Dec 2019 - Feb 2020</h3>
+                    </div>
+                </div>
+
+                <img src='../assets/wal_logistics.gif' class='experience_image'></img>
+                
+                <h2 class='single_experience_subtitle'>SUMMARY</h2>
+                <p>I built a web-based database management application to help a local freight-forwarding company organize and quickly interact with its data on tens of thousands of shipments and payments.</p>
+                
+                <h2 class='single_experience_subtitle'>HIGHLIGHTS</h2>
+                <p>&#8226; Built a cloud database management application with support for custom nested data types, advanced search, and customer access portals to replace legacy freight forwarding software.</p>
+                <p>&#8226; Wrote Node.js scripts to automatically migrate and format 3 gigabytes of critical business data from legacy local databases to a MongoDB M10 Atlas cluster.</p>
+                <p>&#8226; Included support for admin controls to restrict employee access to various data tables and actions depending on an employee’s IP address, job title, and time of day.</p>
+                <p>&#8226; Designed an intuitive interface to interact with large databases, create custom web hooks, and generate customer billing reports using React.js, eliminating the need for costly employee onboarding procedures.</p>
+                
+                <h2 class='single_experience_subtitle'>DESCRIPTION</h2>
+                <p>In early December of 2019, I was contacted by a friend whose parent owned and operated a local freight forwarding business. Their parent's company had been using archaic software for over a decade and it was starting to have its effect.</p>
+                <p>Problems with the software were beginning to add up. First, the software was badly designed. The company sunk many hours into employee onboarding for the software, and even then, basic tasks such as adding and editing shipments took longer than they should. Second, as the company's customer base grew, they were finding that they could not adequately scale. Since their database software was hosted locally, any customer who wanted to file a shipment, check on the status of their shipments, or edit any information had to call the company directly, resulting in many employees whose sole task was to field phone calls. These two problems had already cost the company tens of thousands of dollars in lost productivity, which is why they decided to hire me.</p>
+                <p>I was able to solve each of these problems. As demonstrated in the gif above, I designed intuitive software using React.js that employees could quickly pick up and use. The software supported all the basic operations the company needed, such as adding, deleting, editing, and searching through shipments, in addition to other features.</p>
+                <p>Given the fact that I was building the application in the web, using tools such as MongoDB, Amazon Web Services, and Node.js, it was easy to design a customer portal that exposed only a single customer's data to them based on identifying info such as a shipment ID. From this portal, customers could easily check on their shipments. If a human was required, customers could send a message to an employee directly through the software.</p>
+                <p>The final product also included extras such as user management to restrict employee access based on inputs such as time of day, an employee's IP address, or job title. And, I was able to write a script to migrate all their old data into the new servers, while also flagging data that was incomplete for manual review.</p>
+            
+            </div>
+
+            <div class='single_experience'>
+
+                <div class='single_experience_header'>
+                    <img src='../assets/blueprint_icon.png'></img>
+                    <div class='single_experience_header_text'>
+                        <h3 class='experience_name'><span class='accent'>Blueprint</span> &#183; Software Engineer Intern</h3>
+                        <h3 class='experience_dates'>Nov 2019 - Jan 2020</h3>
+                    </div>
+                </div>
+
+                <h2 class='single_experience_subtitle'>SUMMARY</h2>
+                <p>I programmed a visual overhaul of the checkout page (1000+ daily visitors) for a food delivery service using React.js, Docker containers, and Git for version control.</p>
+
+            </div>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+
+        <title>Atul Jalan</title> 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel='stylesheet' href='../global.css'>
+        <link rel='stylesheet' href='../experience.css'>
+        <script type='text/javascript' src='../main.js'></script>
+
+    </head>
+
+    <body onresize="resize()">
+
+        <div class='nav_bar'>
+
+            <div class='nav_bar_element nav_bar_left'>
+                <h2><a href='../index.html'>Atul Jalan</a></h2>
+            </div>
+
+            <a id='hamburger_icon' href="javascript:void(0);" onclick="show_nav_bar()">
+                <img src='../assets/hamburger_icon.svg'></img>
+            </a>
+
+            <div id='page_links_mobile' class='page_links_mobile'>
+                <h4><a href='../work/work.html'>WORK</a></h4>
+                <h4><a href='#' onclick="show_nav_bar()">PROJECTS</a></h4>
+                <h4><a href='../contact/contact.html'>CONTACT</a></h4>
+                <h4><a href='../assets/resume.pdf' target='_blank' onclick="show_nav_bar()">RESUME</a></h4>
+            </div>
+
+            <div class='nav_bar_element nav_bar_center'>
+                <div class='page_links'>
+                    <a class='underline_animation' href='../work/work.html'><h4>WORK</h4></a>
+                    <a class='underline_animation' href='#'><h4>PROJECTS</h4></a>
+                    <a class='underline_animation' href='../contact/contact.html'><h4>CONTACT</h4></a>
+                    <a class='underline_animation' href='../assets/resume.pdf' target='_blank' ><h4>RESUME</h4></a>
+                </div>
+            </div>
+
+            <div class='nav_bar_element nav_bar_right'>
+                <a href='https://github.com/atul-jalan' target='_blank' ><img src='../assets/github_icon.svg'></img></a>
+                <a href='https://linkedin.com/in/atul-jalan' target='_blank' ><img src='../assets/linkedin_icon.svg'></img></a>
+                <a href='mailto:atuljalan17@gmail.com'><img src='../assets/email_icon.svg'></img></a>
+            </div>
+
+        </div>
+
+        <div class='page_content'>
+
+            <div class='page_title'>
+                <h1>Projects</h1>
+            </div>
+
+            <div class='single_experience'>
+
+                <div class='single_experience_header projects_header'>
+                    <div class='single_experience_header_text projects_header_text'>
+                        <h3 class='experience_name'><span class='accent'>Visual Pathfinder</span> &#183; Solo</h3>
+                        <h3 class='experience_dates'>Sep 2019</h3>
+                    </div>
+                </div>
+
+                <img src='../assets/visualpathfinder.gif' class='experience_image'></img>
+                
+                <h2 class='single_experience_subtitle'>SUMMARY</h2>
+                <p>I built a visual pathfinding application with support for multiple grid sizes, auto generated mazes, multiple algorithms, and drag-and-drop for changing the location of start/finish points and drawing/erasing walls.</p>
+                
+                <h2 class='single_experience_subtitle'>HIGHLIGHTS</h2>
+                <p>&#8226; Created scalable 2D doubly linked list with real time node insertion/deletion feature.</p>
+                <p>&#8226; Wrote adjustable speed, drag-and-drop visualizations for pathfinding, including best path, and maze generation.</p>
+                <p>&#8226; Developed algorithm to produce non-perfect mazes with guaranteed solutions in addition to included recursive division maze generator.</p>
+                <p>&#8226; Programmed 5 graph traversal algorithms, including A* and Dijkstra, using linked lists, queues, stacks, and other data structures.</p>
+                
+                <h2 class='single_experience_subtitle'>DESCRIPTION</h2>
+                <p>With this project, I had three goals: improve as a frontend programmer, learn all about data structures and graph algorithms, and create a portfolio project that looked visually great.</p>
+                <p>To program the (resizable) grid, I maintained a 2d structure of interconnected nodes. The application has the ability to add/remove walls on click, move around the start/finish position on drag, visualize graph traversal algorithms, and generate mazes in real time.</p>
+                <p>Doing all of this required many different data structures (graphs, linked lists, stacks, queues) and algorithms (A*, Dijkstra’s, Greedy Best First, Depth and Breadth First Search).</p>
+                <p>I included 2 main maze generation algorithms: recursive division and another algorithm I designed myself. Recursive division produces perfect mazes, which are mazes in which there's only one solution to get from any one point to another. This is similar to lots of published maze generation algorithms. But, I wanted an algorithm that produced random looking mazes: mazes with loops and large empty sections and inacessible parts and more. I wanted mazes that resembled something closer to real life. So I designed it myself.</p>
+                <p>The following is a maze produced from recursive division:</p>
+                <img src='../assets/visualperfect.gif' class='description_image'></img>
+                <p>The following is a maze produced from my algorithm:</p>
+                <img src='../assets/visualnonperfect.gif' class='description_image'></img>
+            
+            </div>
+
+            <div class='single_experience'>
+
+                <div class='single_experience_header projects_header'>
+                    <div class='single_experience_header_text projects_header_text'>
+                        <h3 class='experience_name'><span class='accent'>InstaMessage</span> &#183; Solo</h3>
+                        <h3 class='experience_dates'>Aug - Oct 2019</h3>
+                    </div>
+                </div>
+
+                <img src='../assets/instamessage.png' class='experience_image'></img>
+                
+                <h2 class='single_experience_subtitle'>SUMMARY</h2>
+                <p>I built a web-based instant messenger where users could create accounts and message any other users, or in a global chat with all other users. The application stored all messages so that previously sent messages would load upon login and users could immediately pick up where they left off.</p>
+                
+                <h2 class='single_experience_subtitle'>HIGHLIGHTS</h2>
+                <p>&#8226; Facilitated instant messaging through WebSocket connection via Node.js Express server hosted on Amazon Web Services (AWS) elastic compute 2 (EC2) instance using pm2.</p>
+                <p>&#8226; Implemented support for creation of 5,000 simultaneous one-on-one conversations with other users using Socket.io in addition to global chat option.</p>
+                <p>&#8226; Enabled seamless continuation of conversations by retrieving user profiles and chat conversations stored on NoSQL MongoDB Atlas cluster through JavaScript Fetch API.</p>
+                <p>&#8226; Built RESTful APIs for client-server communications that are secured against 3rd party data interference via password hashing and JSON authentication tokens stored through browser cookies.</p>
+                
+                <h2 class='single_experience_subtitle'>DESCRIPTION</h2>
+                <p>I entered university as a journalism major and didn't switch into Computer Science until the end of my freshman year. Feeling like I was behind all my peers, I resolved myself to catch up with them over the summer. The result was InstaMessage.</p>
+                <p>Prior to starting the project, I had 0 experience with web development, having never touched even HTML. Thus, at the time, the challenge felt immense. After 2 weeks of learning HTML, CSS, and JavaScript, and another 2 weeks of figuring out websockets, Node.js, and CSV files, I came up with my first iteration of the application: InstaMessage v1.0</p>
+                <img src='../assets/old_instamessage.png' class='description_image'></img>
+                <p>Though the application looked ugly, it worked. Coming from nothing, it felt like a big accomplishment. But, I knew that I wasn't done. The changes from v1.0 to v2.0 were immense. First, I learned about RESTful APIs to handle user logins and used JSON web tokens an browser cookies to authenticate every request to the server. Second, I replaced vanilla websockets with socket.io, an application that was much easier to use and built with powerful add-ons on top of plain websockets. Third, I switched from using CSV files to store messages to MongoDB. Finally, I gave the entire website a visual overhaul, requiring me to write lots of the code from scratch, though it was worth it, as that first iteration of code was not at all well written.</p>
+                <p>After another few weeks (by this point, sophomore year had started), I finished the application and released it using AWS to host the server and a free hosting site to manage all the frontend code. The first picture right below the project title is what v2.0 looked like.</p>
+            
+            </div>
+
+            <div class='single_experience'>
+
+                <div class='single_experience_header projects_header'>
+                    <div class='single_experience_header_text projects_header_text'>
+                        <h3 class='experience_name'><span class='accent'>Machine Learning Snake</span> &#183; Solo</h3>
+                        <h3 class='experience_dates'>Aug 2019</h3>
+                    </div>
+                </div>
+                
+                <h2 class='single_experience_subtitle'>SUMMARY</h2>
+                <p>I used the Keras deep learning library in python to create a feedforward neural network and that learned how to play the popular game Snake. I built a graphical interface using pygame to play Snake as a human and visualize the progress of the network and demonstrate its results.</p>
+                
+                <h2 class='single_experience_subtitle'>HIGHLIGHTS</h2>
+                <p>&#8226; Created feedforward neural network trained on automatically generated data, resulting in average snake length above 50, using Keras deep learning library.</p>
+                <p>&#8226; Constructed machine learning genetic algorithm for training snake neural networks over multiple generations using NEAT library.</p>
+                <p>&#8226; Created graphic snake game with resizable grid in Python using Pygame.</p>                
+                
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

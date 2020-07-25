@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&family=Source+Sans+Pro:wght@700&display=swap');
+
+:root {
+    --title-font: 'Source Sans Pro', sans-serif;
+    --text-font: 'Sintony', sans-serif;
+    
+    --text-color: #3d3c3a;
+    --text-color-lightened: #9f9e9a;
+    --background-color: #fafafa;
+    --accent-color: #0078d4;
+    --highlight-color: #f7c73f;
+}
+
+/* ---- GLOBAL SETTINGS ----- */
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* ----- TEXT DECORATION ----- */
+
+.accent {
+    color: var(--accent-color);
+}
+
+.highlight {
+    text-decoration: underline;
+    text-decoration-color: var(--text-color);
+    transition: .3s text-decoration-color;
+}
+
+.highlight:hover {
+    text-decoration-color: var(--highlight-color);
+    transition: text-decoration-color .3s;
+}
+
+.grayed {
+    color: var(--text-color-lightened)
+}
+
+/* ----- PAGE HEADER ----- */
+
+/* GENERAL */
+.nav_bar {
+    width: 100%;
+    height: 80px;
+
+    position: fixed;
+    top: 0;
+    margin: 0;
+
+    font-family: var(--title-font);
+    font-weight: 700;
+    
+    background-color: var(--background-color)
+}
+.nav_bar_element {
+    float: left;
+    height: 100%;
+}
+
+/* LOGO / LINK TO HOMEPAGE */
+.nav_bar_left {
+    width: 25%;
+}
+.nav_bar_left h2 {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--text-color);
+    margin: 21px 0px 21px 20px;
+}
+
+/* NAV PANE */
+.nav_bar_center {
+    width: 50%;
+}
+.page_links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.page_links h4 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--text-color);
+}
+
+.page_links a {
+    margin: 30px 5%;
+}
+
+@media (min-width: 801px) {
+    /* UNDERLINE ANIMATION - LEFT TO RIGHT */
+    .underline_animation
+    {
+        position: relative;
+    }
+
+    .underline_animation:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--highlight-color);
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .underline_animation:hover:before {
+        visibility: visible;
+        width: 100%;
+    }
+}
+
+/* SOCIAL LINKS */
+.nav_bar_right {
+    width: calc(25% - 15px);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+
+.nav_bar_right img {
+    width: 40px;
+    margin: 20px 5px;
+    color: var(--text-color);
+}
+
+/* ----- PAGE HEADER - MOBILE ----- */
+
+#hamburger_icon {
+    float: right;
+    height: 32px;
+    margin: 24px 20px 24px 0px;
+}
+
+#page_links_mobile {
+    display: none;
+}
+.page_links_mobile {
+    width: 100%;
+    position: fixed;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-color)
+}
+
+.page_links_mobile h4 {
+    display: inline-block;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+@media (max-width: 800px) {
+    .nav_bar_right {
+        display: none;
+    }
+    .nav_bar_left {
+        width: 50%;
+    }
+    .nav_bar_center {
+        display: none;
+    }
+}
+
+@media (min-width: 801px) {
+    #hamburger_icon {
+        display: none;
+    }
+    .page_links_mobile {
+        display: none;
+    }
+}
+
+/* ----- MAIN CONTENT (EXCLUDING HOME PAGE) ----- */
+.page_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    padding-top: 80px;
+    padding-bottom: 200px;
+}
+
+.page_title {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .page_title {
+        max-width: 90%;
+    }
+}
+
+.page_title h1 {
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: 50px;
+    text-align: center;
+    margin: 40px 0 0 0;
+}
