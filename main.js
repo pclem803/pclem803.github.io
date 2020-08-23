@@ -29,8 +29,8 @@ const mounted = () => {
 const resize_ideal_lab = () => {
     ideal_lab_name = document.getElementById('ideal_lab_name')
     if (document.body.clientWidth < 1050) {
-        ideal_lab_name.textContent = 'IDEAL Lab'
+        ideal_lab_name.textContent = 'Relativity'
     } else {
-        ideal_lab_name.textContent = 'Integrated Design Automation Laboratory'
+        ideal_lab_name.textContent = 'Relativity'
     }
 }
